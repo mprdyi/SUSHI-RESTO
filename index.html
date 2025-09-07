@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <meta charset="UTF-8"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushi Resto</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- AOS CSS -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg shadow-sm">
+    <div class="container-fluid">
+      
+      <!-- Brand di kiri (HP/Tablet) -->
+      <a class="navbar-brand d-block d-lg-none" href="#">🍣 SushiResto</a>
+      
+      <!-- Tombol Hamburger -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSushi" aria-controls="navbarSushi" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Isi Navbar -->
+      <div class="collapse navbar-collapse" id="navbarSushi">
+        <!-- Kiri (Desktop) -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" data-aos="fade-right">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#promo">Promo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+        </ul>
+
+        <!-- Brand di Tengah (Desktop) -->
+        <a class="navbar-brand mx-auto d-none d-lg-block" href="index.html" data-aos="fade-up">🍣 SushiResto</a>
+
+        <!-- Kanan -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" data-aos="fade-left">
+            <li class="nav-item">
+                <a class="nav-link" href="#tentang-kami">Tentang</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimoni">Testimoni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak-kami">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <!-- Jumbotron -->
+   <section class="jumbotron-sushi">
+    <div class="jumbotron-overlay"></div>
+    <div class="jumbotron-content" data-aos="zoom-in-up">
+      <h1>Fresh & Authentic Sushi Everyday</h1>
+      <p>Rasakan kelezatan sushi dengan bahan segar, dibuat langsung oleh chef profesional Jepang.</p>
+      <a href="#promo" class="btn btn-danger btn-lg px-4 me-2">🍣 Pesan Sekarang</a>
+      <a href="#menu" class="btn btn-outline-light btn-lg px-4">📖 Lihat Menu</a>
+    </div>
+  </section>
+
+   <!-- About Section -->
+   <section class="container py-5">
+    <div class="row align-items-center" data-aos="fade-up">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="section-title">Welcome to <br> <span style="color:#e63946;">SushiResto</span></h2>
+        <p class="text-muted">
+            Nikmati pengalaman kuliner Jepang yang sesungguhnya di SushiResto.
+            Kami hanya menggunakan bahan-bahan segar pilihan, mulai dari salmon, tuna, hingga rumput laut premium yang langsung diolah oleh chef profesional.
+            Setiap hidangan dibuat dengan penuh ketelitian, mengutamakan rasa autentik khas Jepang sekaligus menjaga kualitas dan kebersihan.
+            
+            Tidak hanya sekadar makanan, sushi kami adalah karya seni yang memanjakan mata dan lidah Anda. Baik untuk santapan sehari-hari, 
+            momen spesial, maupun acara bersama keluarga, SushiResto selalu siap menghadirkan kelezatan terbaik.
+        </p>
+        <a href="#" class="btn btn-sushi px-4 py-2">🍣 Pesan Sekarang</a>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="img/sushi9.jpg" 
+             class="img-fluid rounded" alt="Sushi Bowl">
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Menu Gallery -->
+  <section class="container py-5" data-aos="fade-up">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Featured Menu Gallery</h2>
+      <p class="section-subtitle">Rasakan menu andalan kami yang selalu jadi favorit pelanggan</p>
+    </div>
+    
+    <div class="row g-4">
+      <!-- Menu 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-img">
+          <img src="img/salmon-sushi-roll.jpg" 
+               class="img-fluid" alt="Salmon Sushi">
+        </div>
+        <h5 class="mt-3">Salmon Sushi Roll</h5>
+        <p class="text-muted">Sushi roll isi salmon segar, creamy mayo, dan nori pilihan.</p>
+      </div>
+      <!-- Menu 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-img">
+          <img src="img/sushi-tunagiri-wasabi.jpg" 
+               class="img-fluid" alt="Tuna Nigiri">
+        </div>
+        <h5 class="mt-3">Tuna Nigiri</h5>
+        <p class="text-muted">Potongan tuna premium di atas nasi hangat dengan sentuhan wasabi.</p>
+      </div>
+      <!-- Menu 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-img">
+          <img src="img/sushi-california-roll.jpg" 
+               class="img-fluid" alt="California Roll">
+        </div>
+        <h5 class="mt-3">California Roll</h5>
+        <p class="text-muted">Kombinasi alpukat, crab stick, timun, dibalut dengan nasi dan wijen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sushi-deals py-5 text-white" id="promo">
+    <div class="container">
+      <div class="row align-items-center fade-right"  data-aos="zoom-in-up">
+        <!-- Teks Promo -->
+        <div class="col-lg-7">
+          <h2 class="fw-bold">Promo <span style="color:#ffd166;">Sushi Terbaik Hari Ini</span> 
+            <small class="fs-6 fst-italic">(Penawaran Terbatas)</small>
+          </h2>
+          <p class="mb-4">Cepat! Promo spesial sushi segar pilihan chef kami, hanya berlaku untuk hari ini!</p>
+  
+          <!-- Paket 1 -->
+          <div class="deal-box mb-3 p-3 rounded d-flex justify-content-between align-items-center">
+            <div>
+              <strong>Paket 1:</strong> Salmon Roll (Beli 1 Gratis 1)
+            </div>
+            <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal" 
+            data-bs-target="#sushiModal"
+            data-title="Salmon Roll"
+            data-price="Rp.35.999"
+            data-desc="Beli 1 Gratis 1."
+            data-img="img/salmon-sushi-roll.jpg">Pesan Sekarang</a>
+          </div>
+  
+          <!-- Paket 2 -->
+          <div class="deal-box mb-3 p-3 rounded d-flex justify-content-between align-items-center">
+            <div>
+              <strong>Paket 2:</strong> Sushi Party Platter + 2 Minuman
+            </div>
+            <span class="fw-bold fs-4">Rp149.000</span>
+            <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal" 
+            data-bs-target="#sushiModal"
+            data-title=" Sushi Party Platter + 2 Minuman"
+            data-price="Rp.149.000"
+            data-desc="Paket Hemat Promo  Sushi Party Platter + 2 Minuman ."
+            data-img="img/sushi plating.jpg">Pesan Sekarang</a>
+          </div>
+        </div>
+  
+        <!-- Gambar Sushi -->
+        <div class="col-lg-5 text-center">
+          <img src="img/sushi plating.jpg" alt="Promo Sushi" class="img-fluid rounded-circle shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <section class="container py-5" id="menu" data-aos="fade-up">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold mt-4">Popular <span style="color:#e63946;">Menu</span></h2>
+      <p class="text-muted">Rasakan kelezatan sushi pilihan yang jadi favorit pelanggan kami setiap harinya.</p>
+    </div>
+  
+    <div id="sushiCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+  
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row g-4">
+            <!-- Menu 1 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card card-sushi h-100">
+                <img src="img/salmon-sushi-roll.jpg" class="card-img-top" alt="Salmon Roll">
+                <div class="card-body">
+                  <h5 class="card-title">Salmon Roll</h5>
+                  <p class="price">Rp.35.999</p>
+                  <p class="text-muted small text-descripsi">Sushi roll berisi salmon segar, creamy mayo, dan nori premium.</p>
+                  <div class="stars mb-2">★★★★☆</div>
+                  <button class="btn btn-order w-100" data-bs-toggle="modal" 
+                  data-bs-target="#sushiModal"
+                  data-title="Salmon Roll"
+                  data-price="Rp.35.999"
+                  data-desc="Sushi roll berisi salmon segar, creamy mayo, dan nori premium."
+                  data-img="img/salmon-sushi-roll.jpg">Pesan Sekarang</button>
+                </div>
+              </div>
+            </div>
+            <!-- Menu 2 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card card-sushi h-100">
+                <img src="img/sushi-tunagiri-wasabi.jpg" class="card-img-top" alt="Tuna Nigiri">
+                <div class="card-body">
+                  <h5 class="card-title">Tuna Nigiri</h5>
+                  <p class="price">Rp.17.500</p>
+                  <p class="text-muted small text-descripsi">Potongan tuna premium di atas nasi hangat dengan sentuhan wasabi.</p>
+                  <div class="stars mb-2">★★★★★</div>
+                  <button class="btn btn-order w-100" data-bs-toggle="modal" 
+                  data-bs-target="#sushiModal"
+                  data-title="Tuna Nigiri"
+                  data-price="Rp.17.500"
+                  data-desc="Potongan tuna premium di atas nasi hangat dengan sentuhan wasabi."
+                  data-img="img/sushi-tunagiri-wasabi.jpg">Pesan Sekarang</button>
+                </div>
+              </div>
+            </div>
+            <!-- Menu 3 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card card-sushi h-100">
+                <img src="img/sushi-california-roll.jpg" class="card-img-top" alt="California Roll">
+                <div class="card-body">
+                  <h5 class="card-title">California Roll</h5>
+                  <p class="price">Rp.59.699</p>
+                  <p class="text-muted small text-descripsi">Kombinasi alpukat, crab stick, dan timun dibalut dengan nasi wijen.</p>
+                  <div class="stars mb-2">★★★★☆</div>
+                  <button class="btn btn-order w-100" data-bs-toggle="modal" 
+                  data-bs-target="#sushiModal"
+                  data-title="California Roll"
+                  data-price="Rp.59.699"
+                  data-desc="Kombinasi alpukat, crab stick, dan timun dibalut dengan nasi wijen."
+                  data-img="img/sushi-california-roll.jpg">Pesan Sekarang</button>
+                </div>
+              </div>
+            </div>
+            <!-- Menu 4 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card card-sushi h-100">
+                <img src="img/dragon-roll.jpg" class="card-img-top" alt="Dragon Roll">
+                <div class="card-body">
+                  <h5 class="card-title">Dragon Roll</h5>
+                  <p class="price">Rp.33.560</p>
+                  <p class="text-muted small text-descripsi">Sushi roll isi udang tempura, alpukat, dan saus spesial.</p>
+                  <div class="stars mb-2">★★★★★</div>
+                  <button class="btn btn-order w-100"  data-bs-toggle="modal" 
+                  data-bs-target="#sushiModal"
+                  data-title="Dragon Roll"
+                  data-price="Rp.33.560"
+                  data-desc="Sushi roll isi udang tempura, alpukat, dan saus spesial."
+                  data-img="img/dragon-roll.jpg">Pesan Sekarang</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row g-4">
+            <!-- Menu 5 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card card-sushi h-100">
+                <img src="img/Rainbow Roll2.jpg" class="card-img-top" alt="Rainbow Roll">
+                <div class="card-body">
+                  <h5 class="card-title">Rainbow Roll</h5>
+                  <p class="price">Rp.72.000</p>
+                  <p class="text-muted small text-descripsi">California Roll dengan topping salmon, tuna, dan alpukat.</p>
+                  <div class="stars mb-2">★★★★★</div>
+                  <button class="btn btn-order w-100" data-bs-toggle="modal" 
+                  data-bs-target="#sushiModal"
+                  data-title="Rainbow Roll"
+                  data-price="Rp.72.000"
+                  data-desc="California Roll dengan topping salmon, tuna, dan alpukat"
+                  data-img="img/Rainbow Roll2.jpg">Pesan Sekarang</button>
+                </div>
+              </div>
+            </div>
+            <!-- Menu 6 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card card-sushi h-100">
+                <img src="img/Crunchy Roll.jpg" class="card-img-top" alt="Unagi Nigiri">
+                <div class="card-body">
+                  <h5 class="card-title">Crunch Roll Sushi</h5>
+                  <p class="price">Rp.48.500</p>
+                  <p class="text-muted small text-descripsi">Belut panggang dengan saus manis khas Jepang di atas nasi hangat.</p>
+                  <div class="stars mb-2">★★★★☆</div>
+                  <button class="btn btn-order w-100"  data-bs-toggle="modal" 
+                  data-bs-target="#sushiModal"
+                  data-title="Crunch Roll Sushi"
+                  data-price="Rp.48.500"
+                  data-desc="Belut panggang dengan saus manis khas Jepang di atas nasi hangat."
+                  data-img="img/Crunchy Roll.jpg">Pesan Sekarang</button>
+                </div>
+              </div>
+            </div>
+            <!-- Menu 7 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card card-sushi h-100">
+                <img src="img/spicy Tuna Temaki.jpg" class="card-img-top" alt="Spicy Tuna Roll">
+                <div class="card-body">
+                  <h5 class="card-title">Spicy Tuna Roll</h5>
+                  <p class="price">Rp.43.200</p>
+                  <p class="text-muted small text-descripsi">Gulungan nasi isi tuna cincang pedas dengan mayo.</p>
+                  <div class="stars mb-2">★★★★☆</div>
+                  <button class="btn btn-order w-100" data-bs-toggle="modal" 
+                  data-bs-target="#sushiModal"
+                  data-title="Spicy Tuna Roll"
+                  data-price="Rp.43.200"
+                  data-desc="Gulungan nasi isi tuna cincang pedas dengan mayo."
+                  data-img="img/spicy Tuna Temaki.jpg">Pesan Sekarang</button>
+                </div>
+              </div>
+            </div>
+            <!-- Menu 8 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card card-sushi h-100">
+                <img src="img/Salmon Temaki.jpg" class="card-img-top" alt="Tamago Nigiri">
+                <div class="card-body">
+                  <h5 class="card-title">Salmon Temaki</h5>
+                  <p class="price">Rp.22.000</p>
+                  <p class="text-muted small text-descripsi">Telur manis Jepang di atas nasi sushi, favorit anak-anak.</p>
+                  <div class="stars mb-2">★★★☆☆</div>
+                  <button class="btn btn-order w-100" data-bs-toggle="modal" 
+                  data-bs-target="#sushiModal"
+                  data-title="Salmon Temaki"
+                  data-price="Rp.22.000"
+                  data-desc="elur manis Jepang di atas nasi sushi, favorit anak-anak."
+                  data-img="img/Salmon Temaki.jpg">Pesan Sekarang</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="row g-4">
+            <!-- Menu 9 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card card-sushi h-100">
+                <img src="img/salmon sashimi.jpg" class="card-img-top" alt="Ebi Nigiri">
+                <div class="card-body">
+                  <h5 class="card-title">Salmon Sashimi</h5>
+                  <p class="price">Rp.48.000</p>
+                  <p class="text-muted small text-descripsi">Udang rebus segar di atas nasi lembut dengan sedikit wasabi.</p>
+                  <div class="stars mb-2">★★★★☆</div>
+                  <button class="btn btn-order w-100" data-bs-toggle="modal" 
+                  data-bs-target="#sushiModal"
+                  data-title="Salmon Sashimi"
+                  data-price="Rp.48.000"
+                  data-desc="Salmon segar,dan wasabi yang unik.."
+                  data-img="img/salmon sashimi.jpg">Pesan Sekarang</button>
+                </div>
+              </div>
+            </div>
+            <!-- Menu 10 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card card-sushi h-100">
+                <img src="img/Philadelphia Roll.jpg" class="card-img-top" alt="Philadelphia Roll">
+                <div class="card-body">
+                  <h5 class="card-title">Philadelphia Roll</h5>
+                  <p class="price">Rp.65.000</p>
+                  <p class="text-muted small text-descripsi">Salmon segar, cream cheese, dan alpukat yang creamy.</p>
+                  <div class="stars mb-2">★★★★★</div>
+                  <button class="btn btn-order w-100" data-bs-toggle="modal" 
+                  data-bs-target="#sushiModal"
+                  data-title="Philadelphia Roll"
+                  data-price="Rp.65.000"
+                  data-desc="Salmon segar, cream cheese, dan alpukat yang creamy.."
+                  data-img="img/Philadelphia Roll.jpg">Pesan Sekarang</button>
+                </div>
+              </div>
+            </div>
+            <!-- Menu 11 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card card-sushi h-100">
+                <img src="img/tuna sushimi.jpg" class="card-img-top" alt="Kappa Maki">
+                <div class="card-body">
+                  <h5 class="card-title">Tuna Sashimi</h5>
+                  <p class="price">Rp.20.500</p>
+                  <p class="text-muted small text-descripsi">Sushi gulung isi mentimun segar, simple tapi menyegarkan.</p>
+                  <div class="stars mb-2">★★★☆☆</div>
+                  <button class="btn btn-order w-100" data-bs-toggle="modal" 
+                  data-bs-target="#sushiModal"
+                  data-title="Tuna Sashimi"
+                  data-price="Rp.20.500"
+                  data-desc="Sushi gulung isi mentimun segar, simple tapi menyegarkan."
+                  data-img="img/tuna sushimi.jpg">Pesan Sekarang</button>
+                </div>
+              </div>
+            </div>
+            <!-- Menu 12 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card card-sushi h-100">
+                <img src="img/Volcano Roll Sushi.jpg" class="card-img-top" alt="Volcano Roll">
+                <div class="card-body">
+                  <h5 class="card-title">Volcano Roll</h5>
+                  <p class="price">Rp.78.000</p>
+                  <p class="text-muted small text-descripsi">Roll pedas dengan tuna cincang, jalapeño, dan saus spesial.</p>
+                  <div class="stars mb-2">★★★★★</div>
+                  <button class="btn btn-order w-100" data-bs-toggle="modal" 
+                  data-bs-target="#sushiModal"
+                  data-title="Volcano Roll"
+                  data-price="Rp.78.000"
+                  data-desc="Roll pedas dengan tuna cincang, jalapeño, dan saus spesial."
+                  data-img="img/Volcano Roll Sushi.jpg">Pesan Sekarang</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#sushiCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#sushiCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  
+  <!-- Our Story -->
+  <section class="container py-5" id="tentang-kami">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+        <h2 class="section-title">Tentang <span style="color:#e63946;">Kami</span></h2>
+        <p class="text-muted">
+          Berdiri sejak 2012, <strong>SushiResto</strong> memiliki misi sederhana: 
+          menghadirkan sushi autentik Jepang dengan kualitas terbaik yang menyatukan keluarga dan teman dalam setiap gigitan.
+        </p>
+        <p class="text-muted">
+          Kami percaya bahwa kualitas tidak boleh dikompromikan. Semua sushi kami dibuat dari bahan segar, diracik dengan teliti, dan disajikan dengan penuh perhatian. 
+          Inilah alasan mengapa ribuan pelanggan mempercayakan pengalaman kuliner Jepang mereka kepada kami.
+        </p>
+        <div class="d-flex gap-4 mt-4">
+          <div>
+            <div class="story-icon">50K+</div>
+            <small class="text-muted">Happy Customers</small>
+          </div>
+          <div>
+            <div class="story-icon">20+</div>
+            <small class="text-muted">Awards Won</small>
+          </div>
+          <div>
+            <div class="story-icon">15</div>
+            <small class="text-muted">Locations</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center" data-aos="fade-left">
+        <div class="position-relative">
+          <img src="img/sushi4.jpg" 
+               class="img-fluid rounded" alt="Sushi Story">
+          <span class="badge bg-danger position-absolute bottom-0 start-0 m-3 p-3 fs-6">10+ Tahun Beroperasi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container py-5" id="testimoni" data-aos="fade-up">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Apa Kata <span style="color:#e63946;">Pelanggan</span></h2>
+      <p class="text-muted">Cerita kepuasan mereka setelah menikmati sushi autentik kami.</p>
+    </div>
+  
+    <div class="row g-4" data-aos="fade-zoom-in">
+      <!-- Testimoni 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-testi h-100 text-center">
+          <img src="img/cu3.jpg" class="rounded-circle mx-auto mt-4" width="80" height="80" alt="Customer 1">
+          <div class="card-body">
+            <h5 class="fw-bold">Rina Andini</h5>
+            <div class="stars mb-2 mt-5">★★★★★</div>
+            <p class="text-muted fst-italic">
+              “Sushinya fresh banget, Dragon Roll favorit saya, pasti repeat order!”
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Testimoni 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-testi h-100 text-center">
+          <img src="img/cu4.jpg" class="rounded-circle mx-auto mt-4" width="80" height="80" alt="Customer 2">
+          <div class="card-body">
+            <h5 class="fw-bold">Andi Pratama</h5>
+            <div class="stars mb-2 mt-5">★★★★☆</div>
+            <p class="text-muted fst-italic">
+              “Pelayanan ramah, tempat cozy, sushi rollnya bener-bener bikin nagih.”
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Testimoni 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-testi h-100 text-center">
+          <img src="img/cu1.jpg" class="rounded-circle mx-auto mt-4" width="80" height="80" alt="Customer 3">
+          <div class="card-body">
+            <h5 class="fw-bold">Melati Kusuma</h5>
+            <div class="stars mb-2 mt-5">★★★★★</div>
+            <p class="text-muted fst-italic">
+              “Rainbow Roll-nya cantik banget tampilannya, rasanya juga segar dan balance.”
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Testimoni 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-testi h-100 text-center">
+          <img src="img/cu5.jpg" class="rounded-circle mx-auto mt-4" width="80" height="80" alt="Customer 4">
+          <div class="card-body">
+            <h5 class="fw-bold">Bayu Saputra</h5>
+            <div class="stars mb-2 mt-5">★★★★☆</div>
+            <p class="text-muted fst-italic">
+              “Tempat terbaik buat makan sushi bareng keluarga. Anak-anak suka banget sama Tamago Nigiri.”
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Testimoni 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-testi h-100 text-center">
+          <img src="img/cu2.jpg" class="rounded-circle mx-auto mt-4" width="80" height="80" alt="Customer 5">
+          <div class="card-body">
+            <h5 class="fw-bold">Sari Wijaya</h5>
+            <div class="stars mb-2 mt-5">★★★★★</div>
+            <p class="text-muted fst-italic">
+              “First time coba sushi di sini, langsung jatuh cinta. Salmon Nigiri-nya juara banget!”
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimoni 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-testi h-100 text-center">
+          <img src="img/cu6.jpg" class="rounded-circle mx-auto mt-4" width="80" height="80" alt="Customer 5">
+          <div class="card-body">
+            <h5 class="fw-bold">Rafi Wijaya</h5>
+            <div class="stars mb-2">★★★★★</div>
+            <p class="text-muted fst-italic">
+              “First time coba sushi di sini, langsung jatuh cinta. Salmon Nigiri-nya juara banget!”
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button -->
+<button type="button" class="btn btn-danger btn-lg rounded-circle" id="btn-back-to-top"> 
+    <a href="#" class="text-white text-decoration-none">↑</a> 
+  </button>
+  
+
+  <!-- Contact Us -->
+<section class="contact-us py-5" id="kontak-kami">
+    <div class="container text-center text-white" data-aos="fade-up">
+      <h2 class="fw-bold">Kontak <span style="color:#e63946;">Kami</span></h2>
+      <p class="text-light-emphasis mb-5">
+        Kami siap melayani pertanyaan Anda dan menerima reservasi setiap saat.
+      </p>
+  
+      <div class="row g-4 justify-content-center">
+        <!-- Lokasi -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-contact h-100 text-center">
+            <div class="card-body">
+              <i class="bi bi-geo-alt fs-1 text-danger mb-3"></i>
+              <h5 class="fw-bold text-light">Cabang Utama</h5>
+              <p class="text-light-emphasis">Jl. Sushi Restu No. 88<br>Jakarta, Indonesia</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Telepon -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-contact h-100 text-center">
+            <div class="card-body">
+              <i class="bi bi-telephone fs-1 text-danger mb-3"></i>
+              <h5 class="fw-bold text-light">Kontak Kami</h5>
+              <p class="text-light-emphasis">+62 812-3456-7890<br>(021) 123-4567</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Jam Operasional -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-contact h-100 text-center">
+            <div class="card-body">
+              <i class="bi bi-clock fs-1 text-danger mb-3"></i>
+              <h5 class="fw-bold text-light">Hours</h5>
+              <p class="text-light-emphasis">Sen – Kam: 10AM – 10PM<br>Jum – Ming: 10AM – 11PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Tombol -->
+      <div class="mt-4">
+        <a href="https://maps.google.com" target="_blank" class="btn btn-danger px-4 py-2 rounded-pill">
+          Cari lokasi terdekat
+        </a>
+      </div>
+    </div>
+  </section>
+<!--  modal -->
+<div class="modal fade" id="sushiModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header py-2">
+          <h5 class="modal-title" id="sushiModalLabel">Pesan Sushi</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <div class="modal-body">
+          <div class="row g-3 align-items-center">
+            <!-- Gambar Sushi -->
+            <div class="col-md-6 text-center">
+              <img id="sushiImg" src="" class="img-fluid rounded shadow" alt="Sushi" style="max-height:250px; object-fit:cover;">
+              <h5 id="sushiTitle" class="fw-bold mt-2"></h5>
+              <h6 class="text-danger fw-bold" id="sushiPrice"></h6>
+            </div>
+  
+            <!-- Detail + Input + QRIS -->
+            <div class="col-md-6">
+              <p class="text-muted small" id="sushiDesc"></p>
+  
+              <!-- Input Nomor Meja -->
+              <div class="mb-3">
+                <label for="noMeja" class="form-label">Nomor Meja</label>
+                <input type="number" class="form-control" id="noMeja" min="0" placeholder="Masukkan nomor meja Anda">
+              </div>
+  
+              <!-- QRIS -->
+              <div class="text-center border p-2 rounded">
+                <p class="fw-bold mb-2">Scan QRIS untuk bayar</p>
+                <img src="img/qr.jpg" alt="QRIS" class="img-fluid" style="max-width:150px;">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal-footer py-2">
+          <button class="btn btn-order mt-5 btn-sm">Konfirmasi Pesanan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Footer -->
+<footer class="footer text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <!-- Brand -->
+        <div class="col-md-3 mb-4">
+          <h4 class="fw-bold mb-3">🍣 SushiResto</h4>
+          <p class="small text-white">
+            Nikmati kelezatan sushi autentik Jepang dengan bahan segar pilihan setiap hari.
+            Kami berkomitmen menghadirkan cita rasa terbaik untuk Anda.
+          </p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold mb-3">Menu Cepat</h5>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-decoration-none text-white">Home</a></li>
+            <li><a href="#menu" class="text-decoration-none text-white">Menu</a></li>
+            <li><a href="#tentang-kami" class="text-decoration-none text-white">About Us</a></li>
+            <li><a href="#kontak-kami" class="text-decoration-none text-white">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact -->
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold mb-3">Kontak Kami</h5>
+          <p class="small text-white mb-1"><i class="bi bi-geo-alt me-2"></i> Jl. Sushi Resto No. 88, Jakarta</p>
+          <p class="small text-white mb-1"><i class="bi bi-telephone me-2"></i> +62 812-3456-7890</p>
+          <p class="small text-white"><i class="bi bi-envelope me-2"></i> info@sushiresto.com</p>
+        </div>
+  
+       <!-- Social Media -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold mb-3">Ikuti Kami</h5>
+        <p class="small mb-2">
+          <i class="bi bi-facebook me-2"></i> SushiResto
+        </p>
+        <p class="small mb-2">
+          <i class="bi bi-instagram me-2"></i> @sushiresto.id
+        </p>
+        <p class="small mb-2">
+          <i class="bi bi-twitter me-2"></i> @sushiresto
+        </p>
+        <p class="small mb-0">
+          <i class="bi bi-youtube me-2"></i> SushiResto Channel
+        </p>
+      </div>
+    </div>
+  
+      <hr class="border-secondary">
+  
+      <div class="text-center">
+        <p class="small mb-0">&copy; 2025 SushiResto. All rights reserved. | Designed with ❤️ by Addy Muhamad</p>
+      </div>
+    </div>
+  </footer>
+  
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // durasi animasi (ms)
+    once: true      // animasi jalan sekali aja
+  });
+</script>
+
+</body>
+</html>
